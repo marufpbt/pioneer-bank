@@ -22,6 +22,10 @@ document.getElementById("addWithdraw").addEventListener("click", function () {
 	const withdrawAmount = document.getElementById("withdrawAmount").value;
 	const withdrawNumber = parseFloat(withdrawAmount);
 
+	const currentWithdraw = document.getElementById("currentWithdraw").innerText;
+	const currentWithdrawNumber = parseFloat(currentWithdraw);
+	document.getElementById("currentWithdraw").innerText = withdrawNumber + currentWithdrawNumber;
+
 	const currentBalance = document.getElementById("currentBalance").innerText;
 	const currentNumber = parseFloat(currentBalance);
 	const totalWithdraw = currentNumber - withdrawNumber;
