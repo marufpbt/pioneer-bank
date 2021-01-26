@@ -16,6 +16,8 @@ document.getElementById("addDeposit").addEventListener("click", function () {
 	updateSpanText("currentDeposit", depositNumber);
 	updateSpanText("currentBalance", depositNumber);
 
+	document.getElementById("depositAmount").value = "";
+
 })
 //withdraw button event handler
 document.getElementById("addWithdraw").addEventListener("click", function () {
@@ -30,6 +32,8 @@ document.getElementById("addWithdraw").addEventListener("click", function () {
 	const currentNumber = parseFloat(currentBalance);
 	const totalWithdraw = currentNumber - withdrawNumber;
 	document.getElementById("currentBalance").innerText = totalWithdraw;
+
+	document.getElementById("withdrawAmount").value = "";
 })
 
 
