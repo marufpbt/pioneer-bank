@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pioneer Bank</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+		integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+	</script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+	<div id="login-area">
+		<h1 class="text-center">Welcome to Pioneer Bank</h1>
+		<div class="submit-area mt-5">
+			<h4>Login</h4>
+			<input type="email" class="form-control" placeholder="E-mail"> <br>
+			<input type="password" class="form-control" placeholder="Password"> <br>
+			<div class="btn btn-success" id="login">Submit</div>
+		</div>
+	</div>
+	<div id="transaction-area">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="deposit status">
+					<h5>Deposit</h5>
+					<h2>$ <span id="currentDeposit">00</span> </h2>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="withdraw status">
+					<h5>Withdraw</h5>
+					<h2>$ <span id="currentWithdraw">00</span> </h2>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="balance status">
+					<h5>Balance</h5>
+					<h2>$ <span id="currentBalance">1240</span> </h2>
+				</div>
+			</div>
+		</div>
+		<div class="row my-5">
+			<div class="col-md-6">
+				<div class="box">
+					<h4>Deposit</h4>
+					<input id="depositAmount" type="text" placeholder="125" class="form-control"> <br>
+					<div id="addDeposit" class="btn btn-success">Deposit</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="box">
+					<h4>Withdraw</h4>
+					<input id="withdrawAmount" type="text" placeholder="$ amount you want to withdraw" class="form-control"> <br>
+					<div id="addWithdraw" class="btn btn-success">Deposit</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="style.js"></script>
 </body>
+
 </html>
